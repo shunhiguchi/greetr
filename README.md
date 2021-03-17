@@ -1,4 +1,4 @@
-# Greeter
+# Greetr
 
 ## Requiements
 
