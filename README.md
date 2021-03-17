@@ -12,4 +12,4 @@ Constraints
 - Users shall be able to use the library with the `G$()` structure.
 
 Objectives
-- N/A
+- N/A.
