@@ -25,11 +25,11 @@
         },
         validate: function() {
             if (supportedLanguages.indexOf(this.language) === -1) {
-                throw "Invalid language";
+                throw 'Invalid language';
             }
         },
         greeting: function() {
-            return `${greetings[this.language]} ${this.firstName}!`
+            return `${greetings[this.language]} ${this.firstName}.`
         },
         formalGreeting: function() {
             return `${formalGreetings[this.language]}, ${this.fullName()}.`
@@ -55,6 +55,22 @@
         setLanguage: function(language) {
             this.language = language;
             this.validate;
+            return this;
+        },
+        HTMLGreeting: function(selector, formal) {
+            if (!$) {
+                throw 'jQuery not loaded';
+            }
+            if (!selector) {
+                throw 'Missing jQuery selector'
+            }
+            let message;
+            if (formal) {
+                message = this.formalGreeting();
+            } else {
+                message = this.greeting();
+            }
+            $(selector).html(message);
             return this;
         }
     };
