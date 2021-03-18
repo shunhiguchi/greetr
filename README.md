@@ -1,5 +1,7 @@
 # Greetr
 
+Greetr is a JavaScript library, which generates greetings. It supports jQuery, and it can be used to inject greetings within an HTML file.
+
 ## Requiements
 
 Functions
