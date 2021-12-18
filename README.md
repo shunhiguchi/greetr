@@ -16,6 +16,20 @@ Constraints
 Objectives
 - N/A.
 
+## Usage
+
+To use `greetr.js`:
+
+```javascript
+const firstName = 'John';
+const lastName = 'Doe';
+
+$('input#login').click(function() {
+    const g = G$(firstName, lastName);
+    g.setLanguage($('#language').val()).HTMLGreeting('#greeting', true).log();
+})
+```
+
 ## Notes
 
 This library was created as part of a [JavaScript course by Anthony Alicea](https://www.udemy.com/course/understand-javascript/).
