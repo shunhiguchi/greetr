@@ -15,3 +15,7 @@ Constraints
 
 Objectives
 - N/A.
+
+## Notes
+
+This library was created as part of a [JavaScript course by Anthony Alicea](https://www.udemy.com/course/understand-javascript/).
